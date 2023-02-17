@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+
+    font-family: var(--synonym);
 }
 /* billedet med maleren */
 .hero .painter {
@@ -32,7 +34,7 @@
     justify-content: center;
 
     height: 150px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1;
 
     padding: 1rem;
     background-color: var(--color-darkblue);
@@ -112,15 +114,16 @@
     padding-inline: 15px;
 
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
+
 
 @media screen and (max-width: 900px) {
     .experience{
         display: none;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
     .hero .painter{
         grid-row: 1 / 7;
         grid-column: 1 / 7;
@@ -139,7 +142,7 @@
         z-index: 999;
 
         background-color: var(--color-darkblue);
-        transform: translateY(50%);
+        padding: 100px auto;
     }
     .form input, 
     .form label{

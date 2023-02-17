@@ -1,16 +1,18 @@
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     background-color: var(--color-white);
     box-shadow: 0 0 10px 1px rgb(168, 167, 167);
+
+    font-family: 'Amulya', sans-serif;
 }
 .logo{
     height: 70px;
     aspect-ratio: 1 / 1;
 }
-header ul{
+.header ul{
     display: flex;
     align-items: center;
 
@@ -20,15 +22,15 @@ header ul{
 }
 label, input{display: none;}
 
-header ul a{
+.header ul a{
     color: var(--color-darkblue);
     text-decoration: none;
     font-weight: bold;
 }
-header ul a:hover{
+.header ul a:hover{
     color: var(--color-yellow)
 }
-header ul button{
+.header ul button{
     color: var(--color-white);
     font-size: 1rem;
     font-weight: bold;
@@ -41,7 +43,7 @@ header ul button{
     margin-inline: 1.5rem;
     padding: 1rem;
 }
-header ul button:hover{
+.header ul button:hover{
     background-color: var(--color-darkblue)
 }
 

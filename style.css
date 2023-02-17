@@ -3,13 +3,13 @@
 @import url(css/priceCards.css);
 @import url(css/info.css);
 @import url(css/reviewCards.css);
+@import url(css/footer.css);
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: sans-serif;
 
 }
 :root{
@@ -17,4 +17,10 @@
     --color-yellow: #f6ca50;
     --color-grey: #e5e7eb;
     --color-white: #f8f9fb;
+
+    --amulya: 'Amulya', sans-serif;
+    --synonym: 'Synonym', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--amulya) !important;
 }

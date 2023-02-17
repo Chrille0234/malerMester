@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
+
+    font-family: var(--synonym);
 }
 .info h2{
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 10vw, 3rem);
 }
 .info h3{
     color: var(--color-yellow);
@@ -30,6 +32,11 @@
     color: var(--color-white);
 }
 .info .phoneNumber{
-    font-size: 3.2rem;
+    font-size: clamp(1.5rem, 10vw, 3.2rem);
     font-weight: lighter;
+}
+@media screen and (max-width: 650px){
+    .info ul, .info h3, .info h2, .info p{
+        width: 80%;
+    }
 }
